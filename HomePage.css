@@ -1,4 +1,4 @@
- * {
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -123,6 +123,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 15px;
+            color: #000;
         }
 
         .hero-content h1 {
@@ -132,12 +133,15 @@
             line-height: 0.9;
             text-transform: uppercase;
             letter-spacing: -2px;
+            color: #000;
         }
 
         .hero-content p {
             font-size: 18px;
             margin-bottom: 35px;
             line-height: 1.6;
+            color: #000;
+            font-weight: 500;
         }
 
         .btn-primary-custom {
@@ -257,17 +261,31 @@
             height: 400px;
             overflow: hidden;
             margin-bottom: 20px;
+            position: relative;
         }
 
         .collection-image img {
+            position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s;
+            transition: opacity 0.5s ease;
         }
 
-        .collection-card:hover .collection-image img {
-            transform: scale(1.1);
+        .collection-image .img-default {
+            opacity: 1;
+        }
+
+        .collection-image .img-hover {
+            opacity: 0;
+        }
+
+        .collection-card:hover .collection-image .img-default {
+            opacity: 0;
+        }
+
+        .collection-card:hover .collection-image .img-hover {
+            opacity: 1;
         }
 
         .collection-info h3 {
@@ -310,9 +328,27 @@
         }
 
         .product-image img {
+            position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: opacity 0.4s ease;
+        }
+
+        .product-image .img-default {
+            opacity: 1;
+        }
+
+        .product-image .img-hover {
+            opacity: 0;
+        }
+
+        .product-card:hover .product-image .img-default {
+            opacity: 0;
+        }
+
+        .product-card:hover .product-image .img-hover {
+            opacity: 1;
         }
 
         .product-badge {
@@ -325,6 +361,7 @@
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 1px;
+            z-index: 10;
         }
 
         .product-info {

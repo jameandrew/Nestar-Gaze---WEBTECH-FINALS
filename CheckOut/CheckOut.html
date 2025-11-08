@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NESTAR GAZE</title>
+    <link rel="stylesheet" href="Checkout.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top-banner">
+        FREE SHIPPING ON ALL ORDERS | NEW ARRIVALS DAILY
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="../HomePage.html">NESTAR GAZE</a>
+                <div class="checkout-steps">
+                    <span class="step active">1. Cart</span>
+                    <span class="step-divider">→</span>
+                    <span class="step active">2. Information</span>
+                    <span class="step-divider">→</span>
+                    <span class="step">3. Payment</span>
+                </div>
+                <div class="navbar-icons">
+                    <i class="fas fa-lock"></i>
+                    <span class="secure-text">Secure Checkout</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="checkout-container">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column - Forms -->
+                <div class="col-lg-7">
+                    <div class="checkout-section">
+                        <div class="section-header">
+                            <h3>Contact Information</h3>
+                            <a href="#" class="login-link">Already have an account? Log in</a>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="emailUpdates">
+                            <label class="form-check-label" for="emailUpdates">
+                                Email me with news and offers
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section">
+                        <h3>Shipping Address</h3>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Apartment, suite, etc. (optional)">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="City" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <select class="form-control" required>
+                                    <option value="">Select Province</option>
+                                    <option value="metro-manila">Metro Manila</option>
+                                    <option value="cebu">Cebu</option>
+                                    <option value="davao">Davao</option>
+                                    <option value="iloilo">Iloilo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Postal Code" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone" required>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="saveInfo">
+                            <label class="form-check-label" for="saveInfo">
+                                Save this information for next time
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section">
+                        <h3>Shipping Method</h3>
+                        <div class="shipping-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="shipping" id="standardShipping" checked>
+                                <label class="form-check-label" for="standardShipping">
+                                    <span>Standard Shipping</span>
+                                    <span class="shipping-time">5-7 business days</span>
+                                </label>
+                            </div>
+                            <span class="shipping-price">FREE</span>
+                        </div>
+                        <div class="shipping-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="shipping" id="expressShipping">
+                                <label class="form-check-label" for="expressShipping">
+                                    <span>Express Shipping</span>
+                                    <span class="shipping-time">2-3 business days</span>
+                                </label>
+                            </div>
+                            <span class="shipping-price">₱ 250.00</span>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section">
+                        <h3>Payment Method</h3>
+                        <div class="payment-methods">
+                            <div class="payment-option active">
+                                <input type="radio" name="payment" id="creditCard" checked>
+                                <label for="creditCard">
+                                    <i class="fas fa-credit-card"></i>
+                                    Credit Card
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" name="payment" id="gcash">
+                                <label for="gcash">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    GCash
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" name="payment" id="cod">
+                                <label for="cod">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    Cash on Delivery
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="creditCardForm" class="payment-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Card Number" maxlength="19">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Cardholder Name">
+                            </div>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control" placeholder="CVV" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-actions">
+                        <a href="../Viewing Page/Viewing Page.html" class="back-link">
+                            <i class="fas fa-arrow-left"></i> Return to cart
+                        </a>
+                        <button class="btn-complete-order" id="completeOrderBtn">
+                            Complete Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Order Summary -->
+                <div class="col-lg-5">
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="cart-items" id="checkoutCartItems">
+                            <!-- Items will be loaded from localStorage -->
+                        </div>
+
+                        <div class="promo-code">
+                            <input type="text" class="form-control" placeholder="Discount code or gift card">
+                            <button class="btn-apply">Apply</button>
+                        </div>
+
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span id="subtotalAmount">₱ 0.00</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Shipping</span>
+                                <span id="shippingAmount">FREE</span>
+                            </div>
+                            <div class="total-row total-final">
+                                <span>Total</span>
+                                <span id="totalAmount">₱ 0.00</span>
+                            </div>
+                        </div>
+
+                        <div class="secure-badges">
+                            <div class="badge-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure Payment</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Free Shipping</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="fas fa-undo"></i>
+                                <span>Easy Returns</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="checkout-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Refund Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2025 NESTAR GAZE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Checkout.js"></script>
+</body>
+</html>

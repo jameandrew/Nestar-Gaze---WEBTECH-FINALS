@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NESTAR GAZE – Viewing Product Page</title>
+  <link rel="stylesheet" href="Viewing Page.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="top-banner">
+    FREE SHIPPING ON ALL ORDERS | NEW ARRIVALS DAILY
+  </header>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="../HomePage.html">NESTAR GAZE</a>
+      <div class="navbar-icons">
+        <a href="../CheckOut/CheckOut.html" class="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-page container">
+  <div class="row">
+    <!-- LEFT: IMAGES -->
+    <div class="col-md-6">
+      <!-- Back button -->
+      <button class="back-btn" onclick="goBacktoback()">← Back to Products</button>
+
+      <div class="product-gallery">
+        <img id="mainImage" src="models and products/main.jpg" alt="Fear of God Essentials Tee" class="img-fluid main-img">
+
+        <div class="thumbnail-row">
+          <img src="models and products/main 1.jpg" class="thumb active" onclick="changeImage(this)">
+          <img src="models and products/main 2.jpg" class="thumb" onclick="changeImage(this)">
+          <img src="models and products/main 3.jpg" class="thumb" onclick="changeImage(this)">
+          <img src="models and products/main 4.jpg" class="thumb" onclick="changeImage(this)">
+        </div>
+      </div>
+    </div>
+
+
+      <!-- RIGHT: DETAILS -->
+      <div class="col-md-6">
+        <div class="product-details">
+          <h2 class="product-title">Fear of God Essentials T-Shirt</h2>
+          <p class="product-price">₱ 4,999.00</p>
+          <p class="product-description">
+            Crafted from premium cotton with a relaxed fit, the Fear of God Essentials tee combines comfort and minimal design.
+          </p>
+
+          <div class="size-section">
+            <label class="form-label">Select Size</label>
+            <div class="sizes">
+              <button class="size-btn" data-size="S">S</button>
+              <button class="size-btn" data-size="M">M</button>
+              <button class="size-btn" data-size="L">L</button>
+              <button class="size-btn" data-size="XL">XL</button>
+            </div>
+          </div>
+
+          <div class="quantity-section">
+            <label class="form-label">Quantity</label>
+            <input type="number" id="quantity" min="1" value="1">
+          </div>
+
+          <button class="btn-add-to-bag" id="addToCartBtn">
+            ADD TO BAG
+          </button>
+
+          <div class="afterpay">
+            <i class="fas fa-lock"></i> Secure Payment | Free Shipping | Easy Returns
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 NESTAR GAZE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="Viewing Page.js"></script>
+</body>
+</html>

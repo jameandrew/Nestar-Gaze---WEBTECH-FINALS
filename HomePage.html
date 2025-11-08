@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NESTAR GAZE - Fashion Meets Performance</title>
     <link rel="stylesheet" href="homepage.css">
+    <script src="HomePage.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -19,12 +20,11 @@
                 <a class="navbar-brand" href="#">NESTAR GAZE</a>
                 <div class="d-flex align-items-center gap-5">
                     <div class="d-none d-lg-flex gap-4">
-                        <a class="nav-link" href="#">New</a>
-                        <a class="nav-link" href="#">Men</a>
-                        <a class="nav-link" href="#">Women</a>
-                        <a class="nav-link" href="#">Hoodies</a>
-                        <a class="nav-link" href="#">Graphic Tees</a>
-                        <a class="nav-link" href="#">Sale</a>
+                        <a class="nav-link" href="product page/New.html">New</a>
+                        <a class="nav-link" href="product page/Product.html">Men</a>
+                        <a class="nav-link" href="product page/Hoodies.html">Hoodies</a>
+                        <a class="nav-link" href="product page/GraphicTees.html">Graphic Tees</a>
+                        <a class="nav-link" href="product page/Sale.html">Sale</a>
                     </div>
                     <div class="navbar-icons">
                         <div class="search-bar">
@@ -46,7 +46,7 @@
             <h1>Move in Style</h1>
             <p>Where urban culture meets bold design. Discover premium hoodies and graphic tees that define street style.</p>
             <div>
-                <button class="btn-primary-custom">Shop Collection</button>
+                <button id="BtnShopNow" class="btn-primary-custom">Shop New</button>
                 <button class="btn-secondary-custom">Learn More</button>
             </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="banner-overlay">
                 <h2>Hoodies</h2>
                 <p>Comfort meets urban style</p>
-                <button class="btn-secondary-custom">Explore Now</button>
+                <button id="exploreBtn" class="btn-secondary-custom">Explore Now</button>
             </div>
         </div>
         <div class="banner-section">
@@ -66,7 +66,7 @@
             <div class="banner-overlay">
                 <h2>Graphic Tees</h2>
                 <p>Express your unique style</p>
-                <button class="btn-secondary-custom">Shop Now</button>
+                <button id="BtnShopSale" class="btn-secondary-custom">Shop Now</button>
             </div>
         </div>
     </div>
@@ -186,7 +186,7 @@
         <div class="container">
             <h2>End of Season Sale</h2>
             <p>Up to 60% off select styles. Limited time only.</p>
-            <button class="btn-secondary-custom">Shop Sale</button>
+            <button id="BtnShop" class="btn-secondary-custom">Shop Sale</button>
         </div>
     </section>
 
@@ -196,7 +196,7 @@
             <div class="trending-scroll">
                 <div class="trending-card">
                     <div class="collection-image">
-                        <img src="https://images.unsplash.com/photo-1509319117460-f4d87c41f2dd?w=350&h=400&fit=crop" alt="Trend">
+                        <img src="product page/Over.jpg" alt="Trend">
                     </div>
                     <div class="collection-info">
                         <h3>Oversized Hoodies</h3>
@@ -205,7 +205,7 @@
                 </div>
                 <div class="trending-card">
                     <div class="collection-image">
-                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=350&h=400&fit=crop" alt="Trend">
+                        <img src="product page/Raid.webp" alt="Trend">
                     </div>
                     <div class="collection-info">
                         <h3>Band Tees</h3>
@@ -214,7 +214,7 @@
                 </div>
                 <div class="trending-card">
                     <div class="collection-image">
-                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=350&h=400&fit=crop" alt="Trend">
+                        <img src="product page/madonna.jpg" alt="Trend">
                     </div>
                     <div class="collection-info">
                         <h3>Vintage Graphics</h3>
@@ -223,20 +223,11 @@
                 </div>
                 <div class="trending-card">
                     <div class="collection-image">
-                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=350&h=400&fit=crop" alt="Trend">
+                        <img src="product page/yellowf.webp" alt="Trend">
                     </div>
                     <div class="collection-info">
                         <h3>Zip Hoodies</h3>
                         <p>Versatile essentials</p>
-                    </div>
-                </div>
-                <div class="trending-card">
-                    <div class="collection-image">
-                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=350&h=400&fit=crop" alt="Trend">
-                    </div>
-                    <div class="collection-info">
-                        <h3>Limited Edition</h3>
-                        <p>Exclusive drops</p>
                     </div>
                 </div>
             </div>
